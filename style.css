@@ -1,0 +1,245 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    min-height: 100vh;
+    min-width: 100vw;
+    margin: 0;
+    padding: 0;
+}
+nav {
+    display: flex;
+    justify-content: space-between;
+    margin: 1em 2em 3em 2em;
+}
+/* Remove styles of lists */
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+a {
+    color: inherit; /* blue colors for links too */
+    text-decoration: inherit; /* no underline */
+  }
+
+/* Button styling */
+.btn {
+    border: 2px solid #616161;
+    max-width: fit-content;
+    padding: 1em 2em;
+    border-radius: 2em;
+}
+.btn:hover {
+    cursor: pointer;
+    background-color: #d2d2d2c4;
+}
+
+.nav-links {
+    display: flex;
+    gap: 2em;
+}
+
+.nav-actions {
+    display: flex;
+    gap: 1em;
+}
+
+/* Hero section */
+
+.hero {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    text-align: center; /* Center text within the hero section */
+    max-width: 600px; /* Set a maximum width to prevent it from taking up the entire screen */
+    align-items: center;
+}
+
+.hero .hero-title {
+    font-size: 3em;
+    font-weight: 700;
+    padding: 0.5em 0;
+}
+
+.hero .hero-description {
+    font-size: 1.3em;
+    padding: 0.5em 0;
+    color: #616161;
+}
+
+.hero .hero-btn {
+    border: 2px solid #616161;
+    max-width: fit-content;
+    padding: 1em 2em;
+    border-radius: 2em;
+}
+
+.hero .hero-btn:hover {
+    cursor: pointer;
+    background-color: #d2d2d2c4;
+}
+
+.hero .hero-img img {
+    max-width: 100%; /* Ensure the image does not exceed its container width */
+    height: auto; /* Maintain the aspect ratio of the image */
+    margin-top: 20px; /* Add margin for spacing if needed */
+}
+
+section.motivation {
+    background-color: #d1d1d142;
+}
+
+section.motivation div{
+    display: flex;
+    align-items: center;
+    font-size: 3em;
+    text-align: center;
+    padding: 2em 1em;
+    background: linear-gradient(to right, #d9d9d9, #333);
+    -webkit-background-clip: text; /* Apply the gradient to the text */
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  max-width: 70%;
+  min-height: 400px;
+  margin: auto;
+}
+
+
+/* Showcase section */
+
+section.showcase {
+    display: flex;
+    flex-direction: column;
+}
+
+section.showcase div.showcase-item {
+    height: 800px;
+    width: 80%;
+    align-self: center;
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    gap: 10px;
+    /*border: 1px solid #ddd; /* Add border for visual separation */
+    /*border-radius: 10px; /* Optional: Add border-radius for rounded corners */
+    /*box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Optional: Add box shadow for depth */
+}
+
+.showcase-item-desc {
+    flex: 1;
+    max-width: 60%; /* Adjust the width of the description section */
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.showcase-item-desc > div {
+    margin-bottom: 10px;
+}
+
+.showcase-item-desc .showcase-item-headline {
+    font-size: 1.7em;
+
+}
+.showcase-item-desc .showcase-item-title {
+    font-size: 3.5em;
+    font-weight: 500;
+    margin: 1em 0;
+    
+}
+
+.showcase-item-desc .showcase-item-details {
+    color: #616161;
+    font-size: 1.5em;
+}
+
+
+.showcase-item-desc .showcase-item-btn {
+    border: 2px solid #616161;
+    max-width: fit-content;
+    padding: 1em 2em;
+    border-radius: 2em;
+}
+
+.showcase-item-desc .showcase-item-btn:hover {
+    cursor: pointer;
+    background-color: #d2d2d2c4;
+}
+
+
+
+.showcase-item-image {
+    flex: 1;
+    height: 100%;
+    border-radius: 10px; /* Optional: Add border-radius for rounded corners */
+    background-color: #61616129;
+}
+
+.showcase-item-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Maintain aspect ratio and cover the container */
+    border-radius: 10px; /* Optional: Add border-radius for rounded corners */
+}
+
+
+.showcase-item2 {
+    flex-direction: row-reverse;
+}
+
+
+
+/* Products list section */
+section.products {
+    display: flex;
+    flex-direction: column;
+
+}
+.products-head {
+    display: flex;
+    justify-content: space-between;
+    margin: 1em 2em;
+    align-items: center;
+}
+
+.products-title {
+    font-size: 3em;
+}
+
+.product-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    min-width: 100%;
+}
+
+.product {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    padding: 1em;
+}
+.product-image {
+    border-radius: 10px; /* Optional: Add border-radius for rounded corners */
+    background-color: #61616129;
+    padding: 1em;
+}
+.product-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Maintain aspect ratio and cover the container */
+    border-radius: 10px; /* Optional: Add border-radius for rounded corners */
+}
+
+.product-details {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.product-name {
+    font-size: 1.7em;
+}
+.product-price {
+    color: #616161;
+}
+
